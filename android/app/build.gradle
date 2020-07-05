@@ -23,7 +23,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.dfa.flutterchatdemo"
+        applicationId "com.chatzee.app"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -31,14 +31,6 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    signingConfigs {
-        debug {
-            keyAlias 'KeyAlias'
-            keyPassword 'android'
-            storeFile file("keystore/chatdebug.keystore")
-            storePassword 'android'
-        }
-    }
 
     buildTypes {
         release {

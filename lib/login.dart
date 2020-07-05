@@ -74,7 +74,8 @@ class LoginScreenState extends State<LoginScreen> {
       isLoading = true;
     });
 
-    GoogleSignInAccount googleUser = await googleSignIn.signIn();
+    GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
+    GoogleSignInAccount googleUser = await _googleSignIn.signIn();
     GoogleSignInAuthentication googleAuth = await googleUser.authentication;
 
     final AuthCredential credential = GoogleAuthProvider.getCredential(
